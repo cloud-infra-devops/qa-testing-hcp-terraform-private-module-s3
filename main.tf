@@ -20,7 +20,7 @@ provider "aws" {
 }
 
 module "s3" {
-  source        = "app.terraform.io/cloud-infra-dev/s3/aws"
-  version       = "0.0.9"
-  bucket_prefix = "374278-s3-bucket"
+  source         = "app.terraform.io/cloud-infra-dev/s3/aws"
+  version        = "0.1.0"
+  s3_name_prefix = "374278-s3-bucket"
 }
